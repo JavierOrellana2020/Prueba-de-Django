@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="{% static 'img/logo.png' %}">
+    <title>Principal</title>
+    <link rel="stylesheet" href="{% static 'css/principal.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/galeria.css' %}">
+
+    <!--link json CND-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+
+</head>
+
+<body>
+    <header>
+
+        <!--barra, menu-->
+        <nav>
+            <section class="contenedor nav">
+                <div class="logo">
+                    <img src="{% static 'img/icono.svg' %}" alt="">
+                </div>
+                <div class="enlaces-header">
+                    <a href="/">Kawaii Shop</a>
+                </div>
+
+                <div class="enlaces-header">
+                    <a href="/">Inicio</a>
+                    <a href="/principal">Nuestros Productos</a>
+                    <a href="/nosotros">Sobre Nosotros</a>
+                    <a href="nosotros">Tiendas</a>
+                    <a href="/inicio">Inicio Sesion</a>
+                </div>
+                <div class="partFooter">
+                    <div class="social-media">
+                        <i class="fa fa-coffee" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="hamburguer">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+        <!-- Carousel-->
+
+        <div class="carousel">
+
+            <div class="carousel-contenedor">
+
+                <button aria-label="Anterior" class="carousel-anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="carousel-lista">
+
+                    <div class="carousel-element">
+
+                        <img src="{% static 'img/mariobros.png' %}" alt="Rock and Roll Hall of Fame">
+                        <p></p>
+
+                    </div>
+
+                    <div class="carousel-element">
+                        <img src="{% static 'img/pokemon.png' %}" alt="Rock and Roll Hall of Fame">
+                        <p></p>
+
+                    </div>
+
+                    <div class="carousel-element">
+                        <img src="{% static 'img/shingeki no kyojin.png' %}" alt="Rock and Roll Hall of Fame">
+                        <p></p>
+
+                    </div>
+
+                    <div class="carousel-element">
+                        <img src="{% static 'img/LOL.png' %}" alt="Rock and Roll Hall of Fame">
+                        <p></p>
+
+                    </div>
+
+                    <div class="carousel-element">
+                        <img src="{% static 'img/peluches-naruto.png' %}" alt="Rock and Roll Hall of Fame">
+                        <p></p>
+
+                    </div>
+
+                    <div class="carousel-element">
+                        <img src="{% static 'img/dragonball.png' %}" alt="Rock and Roll Hall of Fame">
+                        <p></p>
+
+                    </div>
+
+                    <div class="carousel-element">
+                        <img src="{% static 'img/stitch.png' %}" alt="Rock and Roll Hall of Fame">
+                        <p></p>
+
+                    </div>
+
+                </div>
+
+                <button aria-label="Siguiente" class="carousel-siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                    </button>
+            </div>
+
+            <div role="tablist" class="carousel-indicadores"></div>
+        </div>
+
+        <!--Termino carousel-->
+
+    </header>
+
+    <!-- Seccion Ventas-->
+
+    <section class="about-us">
+
+        <!--Galeria-->
+        <div class="galeria">
+            <h1>Nuestros Productos</h1>
+            <div class="linea"></div>
+            <div class="contenedor-imagenes">
+                <div class="imagen">
+                    <img src="{% static 'img/gokuazul.jpg' %}">
+                    <div class="overlay">
+                        <h2>Comprame</h2>
+                        
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="{% static 'img/eren.jpg' %}">
+                    <div class="overlay">
+                        <h2>Comprame</h2>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="{% static 'img/mariocapa.jpg' %}" alt="">
+                    <div class="overlay">
+                        <h2>Comprame</h2>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="{% static 'img/peluchepikachu.png' %}" alt="">
+                    <div class="overlay">
+                        <h2>Comprame</h2>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="{% static 'img/levi.jpg' %}" alt="">
+                    <div class="overlay">
+                        <h2>Comprame</h2>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="{% static 'img/hit.jpg' %}" alt="">
+                    <div class="overlay">
+                        <h2>Comprame</h2>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="{% static 'img/kirby.jpg' %}" alt="">
+                    <div class="overlay">
+                        <h2>Comprame</h2>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="{% static 'img/mario.png' %}" alt="">
+                    <div class="overlay">
+                        <h2>Comprame</h2>
+                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="{% static 'img/gnar.png' %}" alt="">
+                    <div class="overlay">
+                        <h2>Comprame</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="questions contenedor">
+        <section class="textos-questions">
+            <h1>Quieres Saber Mas Sobre Nosotros?</h1>
+            <p>Ve nuestra grandiosa comunidad</p>
+            <a href="/nosotros">Vamos!</a>
+        </section>
+        <img src="{% static 'img/segundaIlustracion.svg' %}" alt="" data-aos-duration="1000">
+    </section>
+
+
+
+
+
+
+    <!-- footer-->
+
+
+    <footer>
+        <div class="partFooter">
+            <img src="{% static 'img/logo-jordan-alexander.png' %}" alt="">
+        </div>
+
+
+        <div class="partFooter">
+            <h4>Nuestras Tiendas</h4>
+            <a href="https://www.google.cl/maps/place/Date+Con+todo+Burguer+grill/@-33.5293799,-70.6705181,14z/data=!4m5!3m4!1s0x9662dbdfc87b9cb9:0x12eddc83cbdc32be!8m2!3d-33.51956!4d-70.6592959">Sucursal Santiago</a>
+            <a href="https://www.google.cl/maps/place/Barbazul+Apoquindo/@-33.4126172,-70.5589573,15.5z/data=!4m5!3m4!1s0x9662ceeaab002d8b:0xc4730d019e1b0c3a!8m2!3d-33.4086109!4d-70.5505568">Sucursal Las Cones</a>
+            <a href="https://www.google.cl/maps/place/Hospital+Carlos+van+Buren/@-33.0520173,-71.6202634,14.75z/data=!4m5!3m4!1s0x9689e0dc7d306d53:0x18eefb5a960f1fa6!8m2!3d-33.0506294!4d-71.6107428">Sucursal Valparaiso</a>
+        </div>
+
+        <div class="partFooter">
+            <h4>Redes sociales</h4>
+            <div class="social-media">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/principal.js' %}"></script>
+    <script src="{% static 'js/carousel.js' %}"></script>
+
+
+    <!--json CND-->
+
+</body>
+
+</html>

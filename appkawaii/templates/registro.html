@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Validación JS y CSS3</title>
+	<link rel="icon" type="image/png" href="{% static 'img/logo.png' %}">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
+    <link rel="stylesheet" href="{% static 'css/registro.css' %}">
+	
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+        <div class="header">
+            <div align="center">
+                <h2>Registrate</h2>
+            </div>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" placeholder="Usuario" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Correo@gmail.com" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="password2">Vuelva a introducir su password</label>
+                <input type="password" placeholder="Password" id="password2" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button>Registrar</button>
+            <br>
+            <div align="center">
+                <a href="/principal">Vuelva a la Tienda</a>
+            </div>
+        </form>
+    </div>
+    <!-- partial -->
+    <script src="{% static 'js/prueba.js' %}"></script>
+
+</body>
+
+</html>
